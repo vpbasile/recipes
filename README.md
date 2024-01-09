@@ -1,3 +1,3 @@
-# ZZZ React + TypeScript + Vite + ChakraUI
+# Recipes
 
-A blank project with all of that stuff
+A React app to display recipes from a database
