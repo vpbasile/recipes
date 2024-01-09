@@ -1,5 +1,4 @@
-import { Flex, Heading, VStack, Link } from "@chakra-ui/react";
-import ColorModeButton from "../colorModeButton";
+import { Center, Heading, Image, Link } from "@chakra-ui/react";
 
 export default function Header() {
     
@@ -14,10 +13,8 @@ export default function Header() {
     //     </Box>);
     // }
 
-    return (<Flex id="header" borderBottom={`2px`} marginBottom={'xl'}>
-        <VStack>
-            <Heading flex={3} as={'h1'}><Link href="/">ZZZ Blank Project</Link></Heading>
-            <ColorModeButton />
-        </VStack>
-    </Flex >)
+    return (<Center id="header" borderBottom={`2px`} marginBottom={'xl'} verticalAlign={2}>
+            <Heading id="AppTitle" flex={3} as={'h1'} height={'100px'} p={7}><Link href="/">Recipe Display</Link></Heading>
+        <Image src="/pumpkin.svg" alt="Pumpkin" boxSize="100px" p={2}/>
+    </Center >)
 }

@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/layout";
-import Home from "./Homepage";
+import { Route, Routes } from "react-router-dom";
 import About from "./About";
+import Layout from "./components/layout";
+import RecipeDisplay from "./components/recipeDisplay";
 
 function App() {
 
@@ -11,8 +11,8 @@ function App() {
     //         parent route elements. See the note about <Outlet> below. */}
 
     < Routes >
-      <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
+      <Route path='/recipes' element={<Layout />}>
+        <Route index element={<RecipeDisplay />} />
         <Route path="about" element={<About />} />
       </Route>
     </Routes >
